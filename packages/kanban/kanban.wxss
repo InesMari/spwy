@@ -1,0 +1,126 @@
+.tabs{
+  display: flex;
+  background: #fff;
+  border-bottom:1rpx solid #dee2e9;
+}
+.tabs .item{
+  flex: 1;
+  display: flex;
+  height: 90rpx;
+  font-size: 26rpx;
+  justify-content: center;
+  align-items: center;
+  border-right:1rpx solid #dee2e9;
+}
+.tabs .item.active{
+  background: #ff6600;
+  color: #fff;
+}
+.tabs .item:last-child{
+  border:none;
+}
+.bottom-arrow{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 8rpx;
+}
+.feeCon{
+  background: #fff;
+  border-bottom:1rpx solid #dee2e9;
+}
+.feeCon .item:first-child{
+  border-bottom:1rpx dashed #dee2e9;
+}
+.feeCon .item .title{
+  text-align: center;
+  width: 200rpx;
+  border-right: 1rpx solid #dee2e9;
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.feeCon .item .content{
+  padding:10rpx 30rpx;
+  width: calc(100% - 200rpx);
+  box-sizing: border-box;
+}
+.feeCon .item .content .user{
+  line-height: 40rpx;
+}
+.feeCon .item .content .fee{
+  line-height: 40rpx;
+  color: #ff0000;
+}
+.menu{
+  padding: 24rpx;
+}
+.menu .item{
+  width: 31%;
+  float: left;
+  margin-right: 3.5%;
+  margin-bottom: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  text-align: center;
+}
+.menu .item:nth-child(3n){
+  margin-right: 0;
+}
+.menu .item .num{
+  line-height: 120rpx;
+  color: #1089db;
+}
+.menu .item .text{
+  margin-bottom: 30rpx;
+}
+.menu .item.spec{
+  padding: 20rpx 0 10rpx;
+}
+.menu .item.spec .num{
+  line-height: 45rpx;
+}
+.menu .item.spec .text{
+  margin: 10rpx 0 20rpx;
+}
+
+.filter{
+  line-height: 90rpx;
+  height: 90rpx;
+  border-bottom:1rpx solid #dee2e9;
+  color: #1089db;
+  text-align: center;
+  margin:30rpx 0;
+  background: #fff;
+  font-size: 26rpx;
+}
+
+.filter-container{
+  padding: 30rpx;
+  height: 100%;
+  box-sizing: border-box;
+}
+.filter-container .filter-item{
+  margin-bottom: 20rpx;
+}
+.filter-container .filter-item .label{
+  line-height: 70rpx;
+  font-size: 26rpx;
+}
+.filter-container .filter-item .input-text input{
+  border:1rpx solid #dee2e9;  
+  padding:0 24rpx;
+  height: 60rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.filter-container .page-bottom-btn{
+  position: absolute;
+  width: 100%;
+  bottom:0;
+  left: 0;
+  padding: 30rpx;
+  box-sizing: border-box;
+  margin: 0;
+  height: 150rpx;
+}

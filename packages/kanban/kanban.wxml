@@ -1,0 +1,111 @@
+<view class="tabs mt_20">
+  <view class="item {{orderType==1?'active':''}}" bindtap="changeState" data-state="1">全平台</view>
+  <view class="item {{orderType==3?'active':''}}" bindtap="changeState" data-state="3">
+    自营区域
+    <image class="bottom-arrow" src="/common/images/u300.png"></image>
+  </view>
+  <view class="item {{orderType==4?'active':''}}" bindtap="changeState" data-state="4">
+    加盟区域
+    <image class="bottom-arrow" src="/common/images/u300.png"></image>
+  </view>
+</view>
+<view class="common-tab mt_20">
+  <view class="item {{mineType==2?'active':''}}" bindtap="queryOrder" data-type="2">今天</view>
+  <view class="item {{mineType==1?'active':''}}" bindtap="queryOrder" data-type="1">昨天</view>
+  <view class="item {{mineType==1?'active':''}}" bindtap="queryOrder" data-type="1">本周</view>
+  <view class="item {{mineType==1?'active':''}}" bindtap="queryOrder" data-type="1">本月</view>
+  <view class="item {{mineType==1?'active':''}}" bindtap="showPopover" data-type="1">
+    自定义
+    <image class="bottom-arrow" src="/common/images/u300.png"></image>
+  </view>
+</view>
+<view class="feeCon">
+  <view class="item clearfix">
+    <view class="title fl">营业额</view>
+    <view class="content fl">
+      <view class="clearfix">      
+        <view class="user fl">B端客户</view>
+        <view class="fee fr">13002.32</view>
+      </view>
+      <view class="clearfix">      
+        <view class="user fl">C端客户</view>
+        <view class="fee fr">13002.32</view>
+      </view>
+    </view>
+  </view>
+  <view class="item clearfix">
+    <view class="title fl">成本费</view>
+    <view class="content fl">
+      <view class="clearfix">      
+        <view class="user fl">企业供应商</view>
+        <view class="fee fr">13002.32</view>
+      </view>
+      <view class="clearfix">      
+        <view class="user fl">个人供应商</view>
+        <view class="fee fr">13002.32</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="menu">
+  <view class="item">
+    <view class="num">32123</view>
+    <view class="text">开单量</view>
+  </view>
+  <view class="item">
+    <view class="num">90%</view>
+    <view class="text">自营开单</view>
+  </view>
+  <view class="item spec">
+    <view class="num">100单</view>
+    <view class="num">30.32吨</view>
+    <view class="text">库存量</view>
+  </view>
+  <view class="item">
+    <view class="num">123</view>
+    <view class="text">配载量</view>
+  </view>
+  <view class="item">
+    <view class="num">32%</view>
+    <view class="text">揽件率</view>
+  </view>
+  <view class="item">
+    <view class="num">3312</view>
+    <view class="text">签收量</view>
+  </view>
+  <view class="item">
+    <view class="num">44</view>
+    <view class="text">异常票</view>
+  </view>
+  <view class="item">
+    <view class="num">12</view>
+    <view class="text">取消单</view>
+  </view>
+  <view class="item">
+    <view class="num">3</view>
+    <view class="text">投诉票</view>
+  </view>
+</view>
+
+
+<!-- 筛选 -->
+<popover is-show="{{isShowPopover}}">
+  <view class="filter-container">
+    <view class="filter-item">
+      <view class="label">开始时间：</view>
+      <view class="input-text">
+        <datetimepicker id="startDate" placeholder="请选择时间" bind:change="changeStartDate"></datetimepicker>
+      </view>
+    </view>
+    <view class="filter-item">
+      <view class="label">结束时间：</view>
+      <view class="input-text">
+        <datetimepicker id="endDate" placeholder="请选择时间" bind:change="changeEndDate"></datetimepicker>
+      </view>
+    </view>
+    <view class="page-bottom-btn clearfix">
+      <button class="cancel fl" bindtap="cleanSearch">清空</button>
+      <button class="fr" bindtap="sureFilter">确定</button>
+    </view>
+  </view>
+</popover>

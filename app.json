@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/authorize/authorize",
+    "pages/demo/orderTracking/orderTracking",
+    "pages/demo/operate/operate",
+    "packages/kanban/kanban",
+    "packages/order/orderStatistics/orderStatistics"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f0f5fb"
+  },
+  "plugins": {},
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,23 @@
+
+<view class="navigator">
+  <view class="item" bindtap="toHome">
+    <image src="../../images/gz.png" wx:if="{{selectType!=1}}" mode="widthFix"></image>
+    <image src="../../images/gz_active.png" wx:if="{{selectType==1}}" mode="widthFix"></image>
+    <view>跟踪</view>
+  </view>
+  <view class="item" bindtap="toOperation">
+    <image src="../../images/yy.png" wx:if="{{selectType!=2}}" mode="widthFix"></image>
+    <image src="../../images/yy_active.png" wx:if="{{selectType==2}}" mode="widthFix"></image>
+    <view>运营</view>
+  </view>
+  <view class="item" bindtap="toOrderList">
+    <image src="../../images/kb.png" wx:if="{{selectType!=3}}" mode="widthFix"></image>
+    <image src="../../images/kb_active.png" wx:if="{{selectType==3}}" mode="widthFix"></image>
+    <view>看板</view>
+  </view>
+  <view class="item" bindtap="toPersonal">
+    <image src="../../images/wd.png" wx:if="{{selectType!=4}}" mode="widthFix"></image>
+    <image src="../../images/wd_active.png" wx:if="{{selectType==4}}" mode="widthFix"></image>
+    <view>我的</view>
+  </view>
+</view>

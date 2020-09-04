@@ -1,0 +1,22 @@
+<view class="login-btn">
+  <image class="logo" mode="widthFix" src="/common/images/u3514.png"></image>
+  <view class="phoneLogin" wx:if="{{isPhoneLogin}}">
+    <view class="form">
+      <view class="input-text">    
+        <input bindinput="inputSetData" 
+        data-key="userLogin" placeholder="请输入手机号码"></input>
+      </view>
+      <view class="input-text">    
+        <input bindinput="inputSetData" 
+        data-key="smsCode" placeholder="请输入验证码"></input>
+        <view class="unit" bindtap="getSmsCode" wx:if="{{!isGetSmsCode}}">
+        获取验证码</view>
+        <view class="unit" wx:if="{{isGetSmsCode}}">{{cutdown}}s</view>
+      </view>
+  </view>
+ </view>
+  <block>
+    <button class="b-btn success pay-btn mt_20" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" disabled="{{!isLogin}}"><image src="/common/images/u3024.png"></image>微信一键登录</button>
+    <button class="b-btn warn" bindtap="codeLogin">手机验证码登录</button>
+  </block>
+</view>

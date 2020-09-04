@@ -1,0 +1,6 @@
+{
+  "usingComponents": {    
+    "popover": "/common/components/popover/popover",    
+    "datetimepicker": "/common/components/datetimepicker/datetimepicker"
+  }
+}

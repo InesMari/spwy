@@ -1,0 +1,41 @@
+page{
+  min-height: 100%;
+  background: #fff;
+}
+.title{
+  line-height: 60rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  padding-left: 50rpx;
+  position: relative;
+  background: #f0f5fb;
+}
+.title::before{
+  content: "";
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background: #1089db;
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+}
+.list{
+  padding: 20rpx;
+}
+.list .item{
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  box-sizing: border-box;
+  padding: 20rpx 0;
+  text-align: center;
+  border:1rpx solid #dee2e9;
+  border-radius: 10rpx;
+  /* color: #ff4400; */
+  margin:0 20rpx 20rpx 0;
+}
+.list .item image{
+  width: 64rpx;
+  margin: 0 auto 10rpx;
+}

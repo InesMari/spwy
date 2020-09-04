@@ -1,0 +1,29 @@
+<view class="title">客服</view>
+<view class="list clearfix">
+  <view class="item">
+    <image src="/common/images/u20825.png" mode="widthFix"></image>
+    <text>下单</text>
+  </view>
+  <view class="item">
+    <image src="/common/images/u20824.png" mode="widthFix"></image>
+    <text>中转派发</text>
+  </view>
+</view>
+<view class="title">管理</view>
+<view class="list clearfix">
+  <view class="item">
+    <image src="/common/images/u20823.png" mode="widthFix"></image>
+    <text>付款审核</text>
+  </view>
+</view>
+<view class="title">财务</view>
+<view class="list clearfix">
+  <view class="item">
+    <image src="/common/images/u208212.png" mode="widthFix"></image>
+    <text>在线收益</text>
+  </view>
+  <view class="item">
+    <image src="/common/images/u208211.png" mode="widthFix"></image>
+    <text>付款</text>
+  </view>
+</view>

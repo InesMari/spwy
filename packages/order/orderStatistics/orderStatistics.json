@@ -1,0 +1,8 @@
+{
+  "usingComponents": {    
+    "popover": "/common/components/popover/popover",    
+    "datetimepicker": "/common/components/datetimepicker/datetimepicker",
+    "nav": "/common/components/nav/nav"
+  },
+  "navigationBarTitleText": "平台看板"
+}

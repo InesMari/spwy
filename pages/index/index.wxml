@@ -1,0 +1,36 @@
+<view class="suspension clearfix">
+
+<!--首页搜索-->
+  <view class="search-box">
+    <input placeholder="请输入运单号/收件人姓名/收件人电话" bindinput="inputSetData" value="{{allName}}" data-key="allName"></input>
+  </view>
+  <view class="msg fr">
+    <button class="btn" bindtap="queryOrder">查询</button>
+  </view>
+  </view>
+  
+<!--订单列表-->
+<view class="h-title">查询历史</view>
+<view class="order-list" wx:if="{{!unlogin}}">
+  <view class="item" wx:for="{{orderList}}" wx:key="{{index}}" bindtap="toDetail" data-id="{{item.orderId}}">
+    <view class="clearfix mb_20"> 
+      <view class="fl"><text class="mr_20">运单号</text><text bind:longpress="copyText" data-label="运单号" data-value="{{item.trackingNum}}">{{item.trackingNum }}</text></view>
+      <view class="fr">{{item.orderOutStateName}}</view>
+    </view>
+    <view class="clearfix">
+      <view class="fl"><text>{{item.tenantFullName }}</text></view>
+      <view class="fr fs_20">{{item.showTime}}</view>
+    </view>
+  </view>
+  <view class="pb_20 pt_20 txt_center zt_999" wx:if="{{!isSeeMore&&hasNext}}" bindtap="seeMore">查看更多</view>
+  <view class="nodata" wx:if="{{orderList.length==0}}">没有数据~</view>
+</view>
+
+<!--未登陆提示-->
+<view class="toLogin" wx:if="{{unlogin}}">
+  <view class="text">登录立即查看与您相关的运单信息</view>
+  <button class="b-btn" bindtap="toLogin">立即登录</button>
+</view>
+
+<!-- 底部导航栏 -->
+<nav id="nav"></nav>
